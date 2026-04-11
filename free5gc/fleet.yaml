@@ -9,4 +9,4 @@ helm:
   chart: charts/free5gc
   releaseName: free5gc
   valuesFiles:
-    - free5gc/values.yaml
+    - values.yaml
