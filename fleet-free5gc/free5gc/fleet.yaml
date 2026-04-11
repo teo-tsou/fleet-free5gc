@@ -1,0 +1,14 @@
+defaultNamespace: free5gc
+name: free5gc
+
+dependsOn:
+  - name: gtp5g-installer
+  - name: multus-cni
+
+helm:
+  repo: https://free5gc.github.io/free5gc-helm
+  chart: free5gc
+  version: "v4.2.0"
+  releaseName: free5gc
+  valuesFiles:
+    - values.yaml
