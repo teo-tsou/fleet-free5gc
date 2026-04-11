@@ -6,9 +6,7 @@ dependsOn:
   - name: multus-cni
 
 helm:
-  repo: https://github.com/free5gc/free5gc-helm.git
   chart: charts/free5gc
-  version: v4.2.0
   releaseName: free5gc
   valuesFiles:
-    - values.yaml
+    - free5gc/values.yaml
