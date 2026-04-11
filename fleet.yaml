@@ -6,7 +6,7 @@ dependsOn:
   - name: multus-cni
 
 helm:
-  chart: ./charts/free5gc
+  chart: charts
   releaseName: free5gc
   valuesFiles:
     - values.yaml
