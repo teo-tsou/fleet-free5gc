@@ -5,6 +5,15 @@ global:
   # Storage class for MongoDB PV
   storageClass: local-path
 
+  amf:
+    service:
+      ngap:
+        enabled: true
+        name: amf-n2
+        port: 38412
+        protocol: SCTP
+        type: LoadBalancer
+        
   # N2 network (AMF <-> gNB NGAP)
   n2network:
     enabled: true
