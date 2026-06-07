@@ -19,7 +19,7 @@ global:
         port: 38412
         nodeport: 31412
         protocol: SCTP
-        type: NodePort
+        type: LoadBalancer
   n2network:
     enabled: false
 
